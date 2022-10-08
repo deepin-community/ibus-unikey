@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_install:
+	$(MAKE) -C obj-$(DEB_HOST_GNU_TYPE) DESTDIR=debian/ibus-unikey install
+	install -m 644 -D debian/ibus-setup-Unikey.desktop \
+	                  debian/ibus-unikey/usr/share/applications/ibus-setup-Unikey.desktop

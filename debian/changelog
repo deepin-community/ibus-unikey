@@ -1,0 +1,82 @@
+ibus-unikey (0.7.0~beta1-1) unstable; urgency=medium
+
+  * New maintainer (Closes: #968561)
+  * Tweak d/watch with uversionmangle to replace '-' with '~'
+  * Bump debhelper-compat to 13
+  * Drop redundant ibus-gtk and ibus-gtk3 Depends (Closes: #964996)
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Mon, 17 Aug 2020 17:30:00 +0200
+
+ibus-unikey (0.7.0~beta1-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload
+  * New upstream release (LP: #1872319)
+  * New upstream location, so
+    - Homepage changed in d/control
+    - d/watch modified
+    - Download location changed in d/copyright
+  * debian/control:
+    - Change to gtk3 (LP: #1736604)
+    - Build-Depend on debhelper-compat 12 (and drop d/compat)
+    - Drop redundant {build,} dependencies
+    - Depend on ibus, ibus-gtk and ibus-gtk3
+    - Add Rules-Requires-Root field
+    - Bump Standards-Version to 4.5.0
+  * debian/rules:
+    - Dropped the "--libexecdir=/usr/lib/ibus" configure flag
+      (Closes: #955245)
+    - Housecleaning - keep it simple
+  * debian/ibus-setup-Unikey.desktop, debian/rules:
+    - Install .desktop file for setup (Closes: #956609)
+  * debian/copyright:
+    - Bump copyright years
+  * debian/docs:
+    - Adapted to present file
+
+ -- Gunnar Hjalmarsson <gunnarhj@ubuntu.com>  Thu, 16 Apr 2020 22:39:00 +0200
+
+ibus-unikey (0.6.1-1.1) unstable; urgency=medium
+
+  * Non maintainer upload.
+  * Fix build failure with GCC 6. Closes: #811754.
+  * Fix libexecdir (Osamu Aoki). Closes: #714932.
+  * Bump debhelper and standards versions.
+  * Build with hardening flags.
+  * Use parallel builds.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 02 Aug 2016 10:22:17 +0200
+
+ibus-unikey (0.6.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #661619).
+
+ -- Lê Quốc Tuấn <mr.lequoctuan@gmail.com>  Wed, 29 Feb 2012 14:53:19 +0700
+
+ibus-unikey (0.6.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Lê Quốc Tuấn <mr.lequoctuan@gmail.com>  Mon, 26 Sep 2011 18:22:05 +0700
+
+ibus-unikey (0.5-2) unstable; urgency=low
+
+  * debian/patches/crash-when-edit-macrotable.patch: fix bug crash when
+    edit macro table (Closes: #597292).
+  * debian/patches/macro-on-but-cant-use.patch: enable macro but can't use
+  * debian/patches/check-setup-to-reload-config.patch: improve config
+  * debian/control: bump standards version to 3.9.1.
+
+ -- Lê Quốc Tuấn <mr.lequoctuan@gmail.com>  Sat, 18 Sep 2010 23:34:41 +0700
+
+ibus-unikey (0.5-1) unstable; urgency=low
+
+  * New upstream release (Closes: #579889).
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Lê Quốc Tuấn <mr.lequoctuan@gmail.com>  Mon, 14 Jun 2010 15:59:17 +0700
+
+ibus-unikey (0.3+debian-1) unstable; urgency=low
+
+  * Initial release (Closes: #558210).
+
+ -- Lê Quốc Tuấn <mr.lequoctuan@gmail.com>  Fri, 27 Nov 2009 08:54:00 +0700
