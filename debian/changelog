@@ -1,3 +1,9 @@
+ibus-unikey (0.7.0~beta1-1deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:49:32 +0800
+
 ibus-unikey (0.7.0~beta1-1) unstable; urgency=medium
 
   * New maintainer (Closes: #968561)
